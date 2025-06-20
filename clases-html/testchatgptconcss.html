@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Primera Página Web</title>
+  <style>
+    /* Reset básico */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    /* Tipografía y fondo */
+    body {
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      background-color: #f5f7fa;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* Contenedores */
+    header, nav, main, footer {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 1em;
+    }
+
+    /* Encabezado */
+    header {
+      background-color: #4a90e2;
+      color: #fff;
+      text-align: center;
+      padding: 2em 1em;
+      border-radius: 0 0 10px 10px;
+    }
+
+    /* Navegación */
+    nav {
+      background-color: #fff;
+      margin: 1em 0;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 2em;
+    }
+    nav a {
+      text-decoration: none;
+      color: #4a90e2;
+      font-weight: bold;
+      padding: 0.5em 1em;
+      transition: background-color 0.3s;
+      border-radius: 5px;
+    }
+    nav a:hover {
+      background-color: #e6f0fa;
+    }
+
+    /* Main y secciones */
+    main {
+      padding: 1em;
+    }
+    section {
+      background-color: #fff;
+      margin-bottom: 1.5em;
+      padding: 1.5em;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    section h2 {
+      margin-bottom: 0.5em;
+      color: #4a90e2;
+    }
+    p {
+      margin-bottom: 1em;
+    }
+    img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      margin-top: 1em;
+      border-radius: 5px;
+    }
+    ul li {
+      margin-bottom: 0.5em;
+      padding-left: 1.2em;
+      position: relative;
+    }
+    ul li::before {
+      content: '•';
+      position: absolute;
+      left: 0;
+      color: #4a90e2;
+    }
+
+    /* Pie de página */
+    footer {
+      text-align: center;
+      padding: 1em;
+      background-color: #fff;
+      border-top: 1px solid #ddd;
+      border-radius: 10px 10px 0 0;
+      box-shadow: 0 -2px 5px rgba(0,0,0,0.05);
+      margin-top: 2em;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Bienvenido a Mi Página Web</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#seccion1">Sección 1</a></li>
+      <li><a href="#seccion2">Sección 2</a></li>
+      <li><a href="#seccion3">Sección 3</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="seccion1">
+      <h2>Sección 1: Introducción</h2>
+      <p>Este es un párrafo de ejemplo para explicar lo básico.</p>
+      <img src="imagen-ejemplo.jpg" alt="Imagen de ejemplo">
+    </section>
+
+    <section id="seccion2">
+      <h2>Sección 2: Lista de Elementos</h2>
+      <ul>
+        <li>Elemento de lista 1</li>
+        <li>Elemento de lista 2</li>
+        <li>Elemento de lista 3</li>
+      </ul>
+    </section>
+
+    <section id="seccion3">
+      <h2>Sección 3: Enlaces</h2>
+      <p>Visita <a href="https://openai.com" target="_blank">OpenAI</a> para más información.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Mi Nombre. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
